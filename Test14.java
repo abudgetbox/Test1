@@ -20,9 +20,9 @@ class Test13
             
         for(String i : literal){
             if (isValid(i))
-                System.out.println("This matches");
+                System.out.println("This could be a java variable");
             else
-                System.out.println("This does not match");
+                System.out.println("This could not be a java variable);
         }
     }
 }
