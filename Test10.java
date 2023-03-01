@@ -6,9 +6,7 @@ class Test10
 {
     public static boolean isValid(String num)
     {
-        String regExp = "^(0[xX][0-9a-fA-F]+)"+
-                            "([0-7]+)(u|l)" +
-                            "([0-9]+)(u|l)";
+        String regExp = "([0-9] | [1-9][0-9]* |[0-7]+| 0[xX][0-9a-fA-F]+)(i64|I64|u|U|l|L)?";
                               
         Pattern pattern = Pattern.compile(regExp);
         if (num == null)
